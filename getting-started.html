@@ -58,17 +58,30 @@
   <div class="container">
     <h2>Install</h2>
 
+    <p>
+      To use eclipse-pmd, you need to run Eclipse with Java 11. You can still compile and analyze projects that use an older Java version.
+      To set the JVM, you have to set the parameter -vm in your eclipse.ini accordingly. The <a
+        href="http://wiki.eclipse.org/Eclipse.ini#Specifying_the_JVM" target="_blank">Eclipse Wiki</a> explains how to set up the JVM
+      correctly.
+    </p>
+
     <h3>Eclipse Marketplace</h3>
     <p>
-      The recommended way to install the plugin on Eclipse 3.7 (and later) is to drag and drop the following button into a running Eclipse
-      workspace: <a class="waves-effect waves-light btn-small light-green" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=932046"
+      The recommended way to install the plugin on Eclipse ${eclipse-release} (and later) is to drag and drop the following button into a
+      running Eclipse workspace: <a class="waves-effect waves-light btn-small light-green"
+        href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=932046"
         title="Drag and drop into a running Eclipse workspace to install eclipse-pmd"> Install eclipse-pmd </a>
     </p>
 
     <h3>Update Site</h3>
     <p>
-      An alternative way to install the plugin on Eclipse 3.7 (and later) is via the plugin update site <a
+      An alternative way to install the plugin on Eclipse ${eclipse-release} (and later) is via the plugin update site <a
         href="http://www.acanda.ch/eclipse-pmd/release/latest">http://www.acanda.ch/eclipse-pmd/release/latest</a>.
+    </p>
+    <p>
+      If you cannot use Java 11 or later for some reason you can use the latest 1.x version of eclipse-pmd which requires Java 7 or later
+      by using the update site <a href="http://www.acanda.ch/eclipse-pmd/release/1/latest">http://www.acanda.ch/eclipse-pmd/release/1/latest</a>.
+      The 1.x versions are not under development anymore and you will not get the latest features if you use this update site.
     </p>
     <ol>
       <li>In Eclipse go to <strong>Help</strong> > <strong>Install new software...</strong>
@@ -99,7 +112,7 @@
     <p>Use the property dialog of your project(s) to activate eclipse-pmd.</p>
     <ol>
       <li>If you don't already have a PMD rule set then <a
-        href="http://pmd.github.io/pmd-6.23.0/pmd_userdocs_making_rulesets.html">create a new one</a>.
+        href="http://pmd.github.io/pmd-6.24.0/pmd_userdocs_making_rulesets.html">create a new one</a>.
       </li>
       <li>Open the property dialog of your project.</li>
       <li>Select the <strong>PMD</strong> property page.
