@@ -39,7 +39,7 @@
     <h2>Install</h2>
 
     <p>
-      To use eclipse-pmd, you need to run Eclipse with Java 17. You can still compile and analyze projects that use an older Java version.
+      To use eclipse-pmd, you need to run Eclipse with Java 21. You can still compile and analyze projects that use an older Java version.
       To set the JVM, you have to set the parameter -vm in your eclipse.ini accordingly. The <a
         href="http://wiki.eclipse.org/Eclipse.ini#Specifying_the_JVM" target="_blank">Eclipse Wiki</a> explains how to set up the JVM
       correctly.
@@ -47,7 +47,7 @@
 
     <h3>Eclipse Marketplace</h3>
     <p>
-      The recommended way to install the plugin on Eclipse 2023-09 (and later) is to drag and drop the following button into a
+      The recommended way to install the plugin on Eclipse 2023-12 (and later) is to drag and drop the following button into a
       running Eclipse workspace: <a class="waves-effect waves-light btn-small light-green"
         href="https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=932046"
         title="Drag and drop into a running Eclipse workspace to install eclipse-pmd"> Install eclipse-pmd </a>
@@ -55,7 +55,7 @@
 
     <h3>Update Site</h3>
     <p>
-      An alternative way to install the plugin on Eclipse 2023-09 (and later) is via the plugin update site <a
+      An alternative way to install the plugin on Eclipse 2023-12 (and later) is via the plugin update site <a
         href="https://eclipse-pmd.acanda.ch/release/latest">https://eclipse-pmd.acanda.ch/release/latest</a>.
     </p>
     <ol>
@@ -67,7 +67,7 @@
       </li>
       <li>Finish the installation by accepting the license and restarting Eclipse.</li>
     </ol>
-    <p>If you cannot use Java 17 or later for some reason, you can use an older version of eclipse-pmd. Those versions are not
+    <p>If you cannot use Java 21 or later for some reason, you can use an older version of eclipse-pmd. Those versions are not
       maintained anymore and you will not get the latest features if you use their update site.</p>
     <table>
       <thead>
@@ -80,10 +80,16 @@
       </thead>
       <tbody>
         <tr>
-          <td>Java 17</td>
-          <td>eclipse-pmd 3.x</td>
+          <td>Java 21</td>
+          <td>eclipse-pmd 4.x</td>
           <td>https://eclipse-pmd.acanda.ch/release/latest</td>
           <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Java 17</td>
+          <td>eclipse-pmd 3.12</td>
+          <td>https://eclipse-pmd.acanda.ch/release/3.12</td>
+          <td>No</td>
         </tr>
         <tr>
           <td>Java 11</td>
@@ -119,7 +125,7 @@
     <p>Use the property dialog of your project(s) to activate eclipse-pmd.</p>
     <ol>
       <li>If you don't already have a PMD rule set then <a
-        href="http://pmd.github.io/pmd-7.5.0/pmd_userdocs_making_rulesets.html">create a new one</a>.
+        href="http://pmd.github.io/pmd-7.6.0/pmd_userdocs_making_rulesets.html">create a new one</a>.
       </li>
       <li>Open the property dialog of your project.</li>
       <li>Select the <strong>PMD</strong> property page.
